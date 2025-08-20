@@ -32,8 +32,6 @@ updateCountdown();
 function copyRekening(btn) {
   const rekening = btn.parentElement.querySelector('.rekening-number').textContent.trim();
   navigator.clipboard.writeText(rekening);
-  btn.querySelector('img').style.opacity = '1';
-  setTimeout(() => btn.querySelector('img').style.opacity = '0.7', 800);
   alert('Nomor rekening telah disalin: ' + rekening);
 }
 async function add() {
